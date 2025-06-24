@@ -72,7 +72,7 @@ function mostrarHoteles(lista) {
       'border', 'p-4', 'rounded', 'shadow', 'w-64','bg-gray-200'
     ); 
     tarjeta.innerHTML = `
-      <img src="${hotel.imagen}" alt="${hotel.nombre}" class="w-full h-40 object-cover rounded mb-2">
+      <img src="${hotel.imagen}" alt="${hotel.nombre}" class="mb-4 rounded-lg shadow-lg w-full h-48 object-cover">>
       <h3 class="text-lg font-bold mb-1">${hotel.nombre}</h3>
       <p class="text-sm mb-1">${hotel.descripcion}</p>
       <p class="text-sm mb-1"><strong>Ubicación:</strong> ${hotel.ubicacion}</p>
