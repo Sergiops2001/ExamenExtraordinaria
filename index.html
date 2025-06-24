@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de hoteles</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body >
+  <header>
+    <h1 class="text-6xl text-blue-500 text-center">Buscador de hoteles</h1>
+    <nav>
+      <ul class="flex justify-center space-x-4 mt-4 text-lg">
+        <li class="text-blue-600 font-semibold pb-2 border-b-2 border-blue-600"><a href="index.html">Buscador</a></li>
+        <li class="text-blue-700 hover:text-blue-600 pb-2 border-b-2 border-transparent hover:border-blue-400 transition"><a href="favorites.html">Favoritos</a></li>
+        <li class="text-blue-700 hover:text-blue-600 pb-2 border-b-2 border-transparent hover:border-blue-400 transition"> <a href="detail.html">Detalles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <div class="flex items-center justify-center gap-4 mt-4">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Buscar hoteles..."
+      class="block p-2 border border-gray-300 rounded"
+    />
+
+    <label class="flex items-center space-x-2 text-blue-600">
+      <input type="checkbox" id="filtroPiscina" />
+      <span>Con piscina</span>
+    </label>
+  </div>
+ <div id="contenedor-hoteles" class="flex flex-wrap justify-center gap-4 mt-4"></div>
+ </main>
+ <script src="app.js"></script>
+ </body>
